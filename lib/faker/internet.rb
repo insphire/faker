@@ -25,12 +25,29 @@ module Faker
         [ domain_word, domain_suffix ].join('.')
       end
       
-      def domain_word
-        Company.name.split(' ').first.gsub(/\W/, '').downcase
+      def domain_word(name = nil)
+        name = Company.name if name.blank?
+        name.split(' ').first.gsub(/\W/, '').downcase
       end
       
       def domain_suffix
         fetch('internet.domain_suffix')
+      end
+      
+      def website(name = nil)
+        [ 'www', domain_word(name), domain_suffix ].join('.')
+      end
+      
+      def facebook
+        numerify(fetch('internet.facebook'))
+      end
+      
+      def twitter(name = nil)
+        "twitter.com/#!/#{user_name(name)}"
+      end
+
+      def linkedin(name = nil)
+        "www.linkedin.com/in/#{user_name(name)}"
       end
       
       def ip_v4_address

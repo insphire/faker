@@ -9,6 +9,14 @@ module Faker
         fetch('company.suffix')
       end
       
+      def title
+        fetch('company.title')
+      end
+      
+      def department
+        fetch('company.department')
+      end
+      
       # Generate a buzzword-laden catch phrase.
       # Wordlist from http://www.1728.com/buzzword.htm
       def catch_phrase

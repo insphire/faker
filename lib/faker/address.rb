@@ -37,6 +37,30 @@ module Faker
       def state_abbr;    fetch('address.state_abbr');    end
       def state;         fetch('address.state');         end
       def country;       fetch('address.country');       end
+      
+      # Returns a uk city or the uk city associated with a uk county
+      # based on city with the same index as the county
+      def uk_city(county = nil)
+        if county.blank?
+          fetch('address.uk_city')
+        else
+          index = I18n.translate(:faker)[:address][:uk_county].index(county)
+          city = I18n.translate(:faker)[:address][:uk_city][index] if index
+          city ? city : fetch('address.uk_city')
+        end  
+      end
+      
+      # Returns a uk county or the uk county associated with a uk city
+      # based on city with the same index as the county
+      def uk_county(city = nil)
+        if city.blank?
+          fetch('address.uk_county')
+        else
+          index = I18n.translate(:faker)[:address][:uk_city].index(city)
+          county = I18n.translate(:faker)[:address][:uk_county][index] if index
+          county ? county : fetch('address.uk_county')
+        end  
+      end
 
       # You can add whatever you want to the locale file, and it will get 
       # caught here... e.g., create a country_code array in your locale, 
@@ -55,7 +79,7 @@ module Faker
       alias_method :us_state, :state
       alias_method :us_state_abbr, :state_abbr
       alias_method :uk_postcode, :zip_code
-      def uk_county; county; end
+      alias_method :uk_town, :city
 
     end
   end

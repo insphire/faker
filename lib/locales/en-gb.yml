@@ -1,8 +1,97 @@
 en-gb:
   faker:
     address:
+      city_prefix: [North, East, West, South, Great, Great, Little, Long, Thorpe, Upper, Lower]
+      city_suffix: [town, ton, burgh, borough, bridge, bury, view, port, mouth, chester, mouth, fort, haven, side, shire, land, hampton, ford, hill, ham]
+      street_address: ['#', '##', '###']
+      street_suffix: [Alley, Avenue, Bank, Banks, Bridge, Brook, Brooks, Cliff, Cliffs, Close, Common, Corner, Court, Courts, Crescent, Crest, Croft, Crossing, Dale, Drive, Drives, End, Estate, Field, Fields, Garden, Gardens, Green, Grove, Groves, Heights, Highway, Hill, Hills, Manor, Meadow, Meadows, Mews, Park, Parks, Place, Road, Row, Rows, Square, Squares, Street, Streets, Terrace, Terraces, View, Views, Walk, Walks, Way]
+      secondary_address: ['Flat #', 'Flat ##', 'Unit #', 'Unit ##', 'Unit ##']
       postcode: ['??# #??', '??## #??']
-      county: [Avon, Bedfordshire, Berkshire, Borders, Buckinghamshire, Cambridgeshire, Central, Cheshire, Cleveland, Clwyd, Cornwall, County Antrim, County Armagh, County Down, County Fermanagh, County Londonderry, County Tyrone, Cumbria, Derbyshire, Devon, Dorset, Dumfries and Galloway, Durham, Dyfed, East Sussex, Essex, Fife, Gloucestershire, Grampian, Greater Manchester, Gwent, Gwynedd County, Hampshire, Herefordshire, Hertfordshire, Highlands and Islands, Humberside, Isle of Wight, Kent, Lancashire, Leicestershire, Lincolnshire, Lothian, Merseyside, Mid Glamorgan, Norfolk, North Yorkshire, Northamptonshire, Northumberland, Nottinghamshire, Oxfordshire, Powys, Rutland, Shropshire, Somerset, South Glamorgan, South Yorkshire, Staffordshire, Strathclyde, Suffolk, Surrey, Tayside, Tyne and Wear, Warwickshire, West Glamorgan, West Midlands, West Sussex, West Yorkshire, Wiltshire, Worcestershire]
+      # counties in alphabetical order
+      uk_county: [Anglesey, Ayrshire, Bedfordshire, Berkshire, Brecknockshire, Buckinghamshire, Caernarfonshire, Caithness, Carmarthenshire, Cambridgeshire, Cheshire, Cleveland, Cornwall, County Antrim, County Armagh, County Down, County Fermanagh, County Londonderry, County Tyrone, Denbighshire, Derbyshire, Devon, Dorset, Dunbartonshire, Dumfriesshire, Durham, East Sussex, Essex, Flintshire, Glamorgan, Gloucestershire, Greater Manchester, Hampshire, Hertfordshire, Humberside, Kent, Lancashire, Leicestershire, Lincolnshire, Merseyside, Midlothian, Norfolk, Northamptonshire, Northumberland, Nottinghamshire, Oxfordshire, Rutland, Shropshire, Somerset, Staffordshire, Suffolk, Surrey, Tyne and Wear, Warwickshire, West Sussex, Worcestershire, Yorkshire]
+      # cities in county order (same index)
+      uk_city: [LLangenfni, Ayr, Bedford, Abingdon, Brecon, Aylesbury, Caernarfon, Wick, Carmarthen, Cambridge, Chester, Middlesbrough, Truro, Antrim, Armagh, Downpatrick, Enniskillen, Coleraine, Omagh, Ruthin, Derby, Exeter, Dorchester, Dunbarton, Dumfries, Durham, Chichester, Chelmsford, Mold, Cardiff, Gloucester, Manchester, Winchester, Hereford, Hull, Maidstone, Lancaster, Leicester, Lincoln, Liverpool, Edinburgh, Norwich, Northampton, Alnwick, Nottingham, Oxford, Oakham, Shrewsbury, Taunton, Stafford, Ipswich, Guildford, Newcastle, Warwick, Chichester, Worcester, York]
       uk_country: [England, Scotland, Wales, Northern Ireland]
+    company:
+      suffix: [Ltd, Limited, LLP, and Sons, Plc, Group, Associates, Partners]
     internet:
-      domain_suffix: [co.uk, com, biz, info, name]
+      domain_suffix: [co.uk, com, org]
+    name:
+      first_name: [Aaron, Abbie, Abigail, Adam, Aidan, Aimee, Alex, Alexander, Alexandra, Alfie, Alice, Alicia, Alisha, Amber, Amelia, Amelie, Amy, Anna, Archie, Ashton, Ava, Bailey, Ben, Benjamin, Bethany, Billy, Blake, Bradley, Brandon, Brooke, Caitlin, Callum, Cameron, Charles, Charlie, Charlotte, Chloe, Chris, Christopher, Connor, Corey, Courtney, Daisy, Daniel, David, Dylan, Edward, Eleanor, Elizabeth, Ella, Ellie, Elliot, Ellis, Emilia, Emily, Emma, Erin, Esme, Ethan, Eva, Evan, Eve, Evelyn, Evie, Ewan, Faith, Finlay, Finley, Florence, Francesca, Freddie, Freya, Gabriel, George, Georgia, Grace, Gracie, Hannah, Harley, Harriet, Harrison, Harry, Harvey, Hayden, Henry, Hollie, Holly, Imogen, Isaac, Isabel, Isabella, Isabelle, Isla, Isobel, Jack, Jacob, Jake, James, Jamie, Jasmine, Jay, Jayden, Jessica, Joe, Joel, John, Joseph, Joshua, Julia, Kai, Katie, Keira, Kian, Kieran, Kyle, Lacey, Lauren, Layla, Leah, Leo, Leon, Lewis, Lexi, Lexie, Liam, Libby, Lilly, Lily, Logan, Lola, Louie, Louis, Luca, Lucas, Lucy, Luke, Lydia, Maddison, Madison, Maisie, Maria, Martha, Maryam, Mason, Matilda, Matthew, Max, Maya, Megan, Mia, Michael, Millie, Mohammad, Mohammed, Molly, Morgan, Muhammad, Nathan, Niamh, Nicole, Noah, Oliver, Olivia, Oscar, Owen, Paige, Phoebe, Poppy, Rebecca, Reece, Reuben, Rhys, Riley, Robert, Rosie, Ruby, Ryan, Sam, Samuel, Sarah, Scarlett, Sean, Sebastian, Sienna, Skye, Sofia, Sophia, Sophie, Summer, Taylor, Theo, Thomas, Tia, Tilly, Toby, Tyler, William, Zachary, Zac, Zara, Zoe]
+      last_name: [Adams, Allen, Anderson, Bailey, Baker, Barker, Barnes, Bell, Bennett, Branson, Brown, Butler, Campbell, Carter, Chapman, Clark, Clarke, Collins, Cook, Cooper, Cox, Davies, Davis, Edwards, Ellis, Evans, Fisher, Foster, Gibson, Graham, Gray, Green, Griffiths, Hall, Harris, Harrison, Harvey, Hill, Hilton, Holmes, Hughes, Hunt, Jackson, James, Jenkins, Johnson, Jones, Kelly, King, Knight, Lee, Lewis, Lloyd, Marshall, Martin, Mason, Matthews, MacDonald, McDonald, Miller, Mills, Mitchell, Moore, Morgan, Morris, Murphy, Murray, "O'Brien", "O'Connor", "O'Neill", Owen, Palmer, Parker, Patel, Phillips, Powell, Price, Reid, Richards, Richardson, Roberts, Robertson, Robinson, Rogers, Russell, Scott, Shaw, Simpson, Smith, Stevens, Stewart, Taylor, Thomas, Thompson, Thomson, Turner, Walker, Ward, Watson, Webb, White, Wilkinson, Williams, Wilson, Wood, Wright, Young]
+      suffix: [MD, PhD, BA(Hons), BSc(Hons)]
+    phone_number:
+      formats: [
+      '(01###) ###-###', 
+      '(01###) ### ###', 
+      '(01###) ######', 
+      '01###-###-###',
+      '01###-######', 
+      '01### ######', 
+      '01### ### ###', 
+      '01#########',
+      '(01##) ###-####', 
+      '(01##) ### ####', 
+      '(01##) #######', 
+      '01##-###-####',
+      '01##-#######', 
+      '01## #######', 
+      '01## ### ####', 
+      '+44 (0) 1###-###-###', 
+      '+44 (0) 1### ### ###', 
+      '+44 (0) 1### ######',
+      '+44 (0) 1### ### ###',
+      '+44 (0) 1##-###-####', 
+      '+44 (0) 1## ### ####', 
+      '+44 (0) 1## #######', 
+      '+44 (0) 1## ### ####', 
+      '+44 (0) 1#########',
+      '(01###) ###-### x###', 
+      '(01###) ### ### x###', 
+      '(01###) ###### x###', 
+      '01###-###-### x###',
+      '01###-###### x###', 
+      '01### ###### x###', 
+      '01######### x###',
+      '(01##) ###-#### x###', 
+      '(01##) ### #### x###', 
+      '(01##) ####### x###', 
+      '01##-###-#### x###',
+      '01##-####### x###', 
+      '01## ### #### x###', 
+      '+44 (0) 1###-###-### x###', 
+      '+44 (0) 1### ### ### x###', 
+      '+44 (0) 1### ###### x###',
+      '+44 (0) 1##-###-#### x###', 
+      '+44 (0) 1## ### #### x###', 
+      '+44 (0) 1## ####### x###', 
+      '+44 (0) 1######### x###',
+      '(0800) ###-####', 
+      '(0800) ### ####', 
+      '(0800) #######', 
+      '0800-###-####',
+      '0800-#######', 
+      '0800 #######', 
+      '0800#######',
+      '(0845) ###-####', 
+      '(0845) ### ####', 
+      '(0845) #######', 
+      '0845-###-####',
+      '0845-#######', 
+      '0845 #######', 
+      '0845#######']
+    cell_phone:
+      formats: [
+        '(07###) ###-###', 
+        '(07###) ### ###', 
+        '(07###) ######', 
+        '07###-###-###',
+        '07###-######', 
+        '07### ######', 
+        '07### ### ###', 
+        '07#########',
+        '+44 (0) 7###-###-###', 
+        '+44 (0) 7### ### ###', 
+        '+44 (0) 7### ######',
+        '+44 (0) 7#########']
+
