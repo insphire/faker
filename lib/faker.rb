@@ -55,6 +55,10 @@ module Faker
         return number_string.gsub('#') { rand(10).to_s } if leading_zero
 
         number_string.sub('#') { rand(1..9).to_s }.gsub('#') { rand(10).to_s }
+      
+      # Substitutes '$' for 1-9 and '#' for 0-9
+      def numerify(number_string)
+        number_string.gsub(/\$/) { (rand(9) + 1).to_s }.gsub(/#/) { rand(10).to_s }
       end
 
       def letterify(letter_string)
@@ -272,3 +276,13 @@ end
 
 # require faker objects
 Dir.glob(File.join(mydir, 'faker', '/**/*.rb')).sort.each { |file| require file }
+require 'faker/address'
+require 'faker/company'
+require 'faker/internet'
+require 'faker/lorem'
+require 'faker/name'
+require 'faker/phone_number'
+require 'faker/avatar'
+require 'faker/version'
+
+require 'extensions/array'

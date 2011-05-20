@@ -130,4 +130,8 @@ class TestFaker < Test::Unit::TestCase
 
     assert_equal(unique_numbers.uniq, unique_numbers)
   end
+  
+  def test_numerify_positive
+    assert Faker::Base.numerify('$#$').match(/\d{3}/)
+  end
 end
