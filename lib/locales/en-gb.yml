@@ -13,7 +13,7 @@ en-gb:
       uk_city: [LLangenfni, Ayr, Bedford, Abingdon, Brecon, Aylesbury, Caernarfon, Wick, Carmarthen, Cambridge, Chester, Middlesbrough, Truro, Antrim, Armagh, Downpatrick, Enniskillen, Coleraine, Omagh, Ruthin, Derby, Exeter, Dorchester, Dunbarton, Dumfries, Durham, Chichester, Chelmsford, Mold, Cardiff, Gloucester, Manchester, Winchester, Hereford, Hull, Maidstone, Lancaster, Leicester, Lincoln, Liverpool, Edinburgh, Norwich, Northampton, Alnwick, Nottingham, Oxford, Oakham, Shrewsbury, Taunton, Stafford, Ipswich, Guildford, Newcastle, Warwick, Chichester, Worcester, York]
       uk_country: [England, Scotland, Wales, Northern Ireland]
     company:
-      suffix: [Ltd, Limited, LLP, and Sons, Plc, Group, Associates, Partners]
+      suffix: [Ltd, Limited, LLP, and Sons, Plc, Group, Associates, Partners, Communications, International]
       formats:
         -
           - :name_element
