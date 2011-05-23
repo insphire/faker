@@ -4,7 +4,7 @@ en-gb:
       city_prefix: [North, East, West, South, Great, Great, Little, Long, Thorpe, Upper, Lower]
       city_suffix: [town, ton, burgh, borough, bridge, bury, view, port, mouth, chester, mouth, fort, haven, side, shire, land, hampton, ford, hill, ham]
       street_address: ['#', '##', '###']
-      street_suffix: [Alley, Avenue, Bank, Banks, Bridge, Brook, Brooks, Cliff, Cliffs, Close, Common, Corner, Court, Courts, Crescent, Crest, Croft, Crossing, Dale, Drive, Drives, End, Estate, Field, Fields, Garden, Gardens, Green, Grove, Groves, Heights, Highway, Hill, Hills, Manor, Meadow, Meadows, Mews, Park, Parks, Place, Road, Row, Rows, Square, Squares, Street, Streets, Terrace, Terraces, View, Views, Walk, Walks, Way]
+      street_suffix: [Alley, Avenue, Bank, Banks, Bridge, Brook, Brooks, Cliff, Cliffs, Close, Common, Corner, Court, Courts, Crescent, Crest, Croft, Crossing, Dale, Drive, Drives, End, Estate, Field, Fields, Garden, Gardens, Green, Grove, Groves, Heights, Highway, Hill, Hills, Manor, Meadow, Meadows, Mews, Park, Parks, Place, Road, Row, Rows, Square, Squares, Street, Terrace, Terraces, View, Views, Walk, Walks, Way]
       secondary_address: ['Flat #', 'Flat ##', 'Unit #', 'Unit ##', 'Unit ##']
       postcode: ['??# #??', '??## #??']
       # counties in alphabetical order
@@ -15,7 +15,7 @@ en-gb:
     company:
       suffix: [Ltd, Limited, LLP, and Sons, Plc, Group, Associates, Partners]
     internet:
-      domain_suffix: [co.uk, com, org]
+      domain_suffix: [co.uk, com]
     name:
       first_name: [Aaron, Abbie, Abigail, Adam, Aidan, Aimee, Alex, Alexander, Alexandra, Alfie, Alice, Alicia, Alisha, Amber, Amelia, Amelie, Amy, Anna, Archie, Ashton, Ava, Bailey, Ben, Benjamin, Bethany, Billy, Blake, Bradley, Brandon, Brooke, Caitlin, Callum, Cameron, Charles, Charlie, Charlotte, Chloe, Chris, Christopher, Connor, Corey, Courtney, Daisy, Daniel, David, Dylan, Edward, Eleanor, Elizabeth, Ella, Ellie, Elliot, Ellis, Emilia, Emily, Emma, Erin, Esme, Ethan, Eva, Evan, Eve, Evelyn, Evie, Ewan, Faith, Finlay, Finley, Florence, Francesca, Freddie, Freya, Gabriel, George, Georgia, Grace, Gracie, Hannah, Harley, Harriet, Harrison, Harry, Harvey, Hayden, Henry, Hollie, Holly, Imogen, Isaac, Isabel, Isabella, Isabelle, Isla, Isobel, Jack, Jacob, Jake, James, Jamie, Jasmine, Jay, Jayden, Jessica, Joe, Joel, John, Joseph, Joshua, Julia, Kai, Katie, Keira, Kian, Kieran, Kyle, Lacey, Lauren, Layla, Leah, Leo, Leon, Lewis, Lexi, Lexie, Liam, Libby, Lilly, Lily, Logan, Lola, Louie, Louis, Luca, Lucas, Lucy, Luke, Lydia, Maddison, Madison, Maisie, Maria, Martha, Maryam, Mason, Matilda, Matthew, Max, Maya, Megan, Mia, Michael, Millie, Mohammad, Mohammed, Molly, Morgan, Muhammad, Nathan, Niamh, Nicole, Noah, Oliver, Olivia, Oscar, Owen, Paige, Phoebe, Poppy, Rebecca, Reece, Reuben, Rhys, Riley, Robert, Rosie, Ruby, Ryan, Sam, Samuel, Sarah, Scarlett, Sean, Sebastian, Sienna, Skye, Sofia, Sophia, Sophie, Summer, Taylor, Theo, Thomas, Tia, Tilly, Toby, Tyler, William, Zachary, Zac, Zara, Zoe]
       last_name: [Adams, Allen, Anderson, Bailey, Baker, Barker, Barnes, Bell, Bennett, Branson, Brown, Butler, Campbell, Carter, Chapman, Clark, Clarke, Collins, Cook, Cooper, Cox, Davies, Davis, Edwards, Ellis, Evans, Fisher, Foster, Gibson, Graham, Gray, Green, Griffiths, Hall, Harris, Harrison, Harvey, Hill, Hilton, Holmes, Hughes, Hunt, Jackson, James, Jenkins, Johnson, Jones, Kelly, King, Knight, Lee, Lewis, Lloyd, Marshall, Martin, Mason, Matthews, MacDonald, McDonald, Miller, Mills, Mitchell, Moore, Morgan, Morris, Murphy, Murray, "O'Brien", "O'Connor", "O'Neill", Owen, Palmer, Parker, Patel, Phillips, Powell, Price, Reid, Richards, Richardson, Roberts, Robertson, Robinson, Rogers, Russell, Scott, Shaw, Simpson, Smith, Stevens, Stewart, Taylor, Thomas, Thompson, Thomson, Turner, Walker, Ward, Watson, Webb, White, Wilkinson, Williams, Wilson, Wood, Wright, Young]
@@ -46,26 +46,26 @@ en-gb:
       '+44 (0) 1## #######', 
       '+44 (0) 1## ### ####', 
       '+44 (0) 1#########',
-      '(01###) ###-### x###', 
-      '(01###) ### ### x###', 
-      '(01###) ###### x###', 
-      '01###-###-### x###',
-      '01###-###### x###', 
-      '01### ###### x###', 
-      '01######### x###',
-      '(01##) ###-#### x###', 
-      '(01##) ### #### x###', 
-      '(01##) ####### x###', 
-      '01##-###-#### x###',
-      '01##-####### x###', 
-      '01## ### #### x###', 
-      '+44 (0) 1###-###-### x###', 
-      '+44 (0) 1### ### ### x###', 
-      '+44 (0) 1### ###### x###',
-      '+44 (0) 1##-###-#### x###', 
-      '+44 (0) 1## ### #### x###', 
-      '+44 (0) 1## ####### x###', 
-      '+44 (0) 1######### x###',
+      '(01###) ###-### ext ###', 
+      '(01###) ### ### ext ###', 
+      '(01###) ###### ext ###', 
+      '01###-###-### ext ###',
+      '01###-###### ext ###', 
+      '01### ###### ext ###', 
+      '01######### ext ###',
+      '(01##) ###-#### ext ###', 
+      '(01##) ### #### ext ###', 
+      '(01##) ####### ext ###', 
+      '01##-###-#### ext ###',
+      '01##-####### ext ###', 
+      '01## ### #### ext ###', 
+      '+44 (0) 1###-###-### ext ###', 
+      '+44 (0) 1### ### ### ext ###', 
+      '+44 (0) 1### ###### ext ###',
+      '+44 (0) 1##-###-#### ext ###', 
+      '+44 (0) 1## ### #### ext ###', 
+      '+44 (0) 1## ####### ext ###', 
+      '+44 (0) 1######### ext ###',
       '(0800) ###-####', 
       '(0800) ### ####', 
       '(0800) #######', 
