@@ -24,9 +24,11 @@ This fork has been created to update the GB locale file and provide the followin
 (2) address uk_town calls standard city method to return randomly generated name
 
 (3) company name based on locale file formats
+
 (4) company title and department methods returning values based on locale file contents
 
 (5) internet website, facebook, twitter & linkedin methods
+
 (6) internet email address creation for user and domain name:
 
 * Faker::Internet.email => "rebecca@wright.com"
