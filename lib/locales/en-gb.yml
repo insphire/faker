@@ -14,6 +14,29 @@ en-gb:
       uk_country: [England, Scotland, Wales, Northern Ireland]
     company:
       suffix: [Ltd, Limited, LLP, and Sons, Plc, Group, Associates, Partners]
+      formats:
+        -
+          - :name_element
+          - :suffix
+        -
+          - :name_element
+          - :suffix
+        -
+          - :name_element
+          - :suffix
+        -
+          - :name_element
+          - :name_element
+        -
+          - :name_element
+          - 'and'
+          - :name_element
+        -
+          - :name_element
+          - ','
+          - :name_element
+          - 'and'
+          - :name_element
     internet:
       domain_suffix: [co.uk, com]
     name:

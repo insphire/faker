@@ -15,6 +15,23 @@ en:
       suffix: [Inc, and Sons, LLC, Group]
       title: [Manager, Director, Consultant, Technician, Analyst, Team Leader, MD, Managing Director, CEO]
       department: [Accounts, Finance, IT, Research & Development, R & D, Personnel, Human Resources, HR, Implementation, Sales, Support, Purchasing]
+      formats:
+        -
+          - :name_element
+          - :suffix
+        -
+          - :name_element
+          - :name_element
+        -
+          - :name_element
+          - 'and'
+          - :name_element
+        -
+          - :name_element
+          - ','
+          - :name_element
+          - 'and'
+          - :name_element
     internet:
       free_email: [gmail.com, yahoo.com, hotmail.com]
       domain_suffix: [com, biz, info, name, net, org]

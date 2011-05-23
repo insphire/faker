@@ -1,8 +1,8 @@
 module Faker
   class Internet < Base
     class << self
-      def email(name = nil)
-        [ user_name(name), domain_name ].join('@')
+      def email(name = nil, domain = nil)
+        [ user_name(name), domain_name(domain) ].join('@')
       end
       
       def free_email(name = nil)
@@ -21,8 +21,8 @@ module Faker
         ].rand.call
       end
       
-      def domain_name
-        [ domain_word, domain_suffix ].join('.')
+      def domain_name(domain = nil)
+        [ domain_word(domain), domain_suffix ].join('.')
       end
       
       def domain_word(name = nil)

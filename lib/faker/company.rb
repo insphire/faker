@@ -1,8 +1,10 @@
 module Faker
   class Company < Base
     class << self
+      
       def name
-        Formats.rand.call
+        # the gsub caters for name formats containing commas & join ie. 'Pete , Bob and Sue' -> 'Pete, Bob and Sue'
+        fetch('company.formats').collect { |part| part.is_a?(Symbol) ? self.send(part) : part }.join(' ').gsub(' ,',',')
       end
     
       def suffix
@@ -36,12 +38,12 @@ module Faker
           ["synergies", "web-readiness", "paradigms", "markets", "partnerships", "infrastructures", "platforms", "initiatives", "channels", "eyeballs", "communities", "ROI", "solutions", "e-tailers", "e-services", "action-items", "portals", "niches", "technologies", "content", "vortals", "supply-chains", "convergence", "relationships", "architectures", "interfaces", "e-markets", "e-commerce", "systems", "bandwidth", "infomediaries", "models", "mindshare", "deliverables", "users", "schemas", "networks", "applications", "metrics", "e-business", "functionalities", "experiences", "web services", "methodologies"].rand
         ].join(' ')
       end
+      
+      private
+        
+        # Delegate to Name's last_name for the purposes of building company names based on locale formats
+        def name_element; Name.last_name; end
     end
     
-    Formats = [
-      Proc.new { [ Name.last_name, suffix ].join(' ') },
-      Proc.new { [ Name.last_name, Name.last_name ].join('-') },
-      Proc.new { "%s, %s and %s" % [ Name.last_name, Name.last_name, Name.last_name ] }
-      ]
   end
 end
