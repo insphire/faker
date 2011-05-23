@@ -39,6 +39,17 @@ module Faker
         ].join(' ')
       end
       
+      # Returns an array of upto 5 generic categories
+      def categories(num = 5)
+        [
+          ['Red', 'Amber', 'Green'].rand,
+          ['Platinum', 'Gold', 'Silver', 'Bronze'].rand,
+          ['Small', 'Medium', 'Large'].rand,
+          ['International', 'Nationwide', 'North', 'North East', 'East', 'South East', 'South', 'South West', 'West', 'North West'].rand,
+          ['<10', '11-50', '51-100', '101-500', '>500' ].rand
+        ].shuffle[0, num]
+      end
+      
       private
         
         # Delegate to Name's last_name for the purposes of building company names based on locale formats

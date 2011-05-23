@@ -27,16 +27,18 @@ This fork has been created to update the GB locale file and provide the followin
 
 (4) company title and department methods returning values based on locale file contents
 
-(5) internet website, facebook, twitter & linkedin methods
+(5) company categories method returning an array of upto 5 generic categories
 
-(6) internet email address creation for user and domain name:
+(6) internet website, facebook, twitter & linkedin methods
+
+(7) internet email address creation for user and domain name:
 
 * Faker::Internet.email => "rebecca@wright.com"
 * Faker::Internet.email("Chris Hilton") => "chris.hilton@bailey.co.uk"
 * Faker::Internet.email("Chris Hilton","Bartholomew Ltd") => "hilton.chris@bartholomew.com"
 * Faker::Internet.email(nil,"Bartholomew Ltd") => "jessica_hill@bartholomew.com"
 
-(7) phone number cell_phone method returning values based on locale file formats
+(8) phone number cell_phone method returning values based on locale file formats
 
 Using the Fork
 --------------
