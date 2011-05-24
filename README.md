@@ -44,7 +44,7 @@ Using the Fork
 --------------
 To use this fork add the following to your application gemfile:
 
-  gem 'faker', :git => "git://github.com/chrismhilton/faker.git"
+  gem 'faker', :git => "git://github.com/insphire/faker.git"
 
 Usage
 -----
