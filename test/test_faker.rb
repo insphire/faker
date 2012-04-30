@@ -8,4 +8,8 @@ class TestFaker < Test::Unit::TestCase
   def test_numerify
     assert Faker::Base.numerify('###').match(/\d{3}/)
   end
+  
+  def test_numerify_positive
+    assert Faker::Base.numerify('$#$').match(/\d{3}/)
+  end
 end

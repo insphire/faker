@@ -30,6 +30,10 @@ class TestFakerInternet < Test::Unit::TestCase
     assert @tester.domain_word.match(/^\w+$/)
   end
   
+  def test_domain_word_with_arg
+    assert @tester.domain_word(Faker::Company.name).match(/^\w+$/)
+  end
+  
   def test_domain_suffix
     assert @tester.domain_suffix.match(/^\w+(\.\w+)?/)
   end
@@ -49,4 +53,13 @@ class TestFakerInternet < Test::Unit::TestCase
       assert @tester.ip_v6_address.split('.').map{|h| "0x#{h}".hex}.max <= 65535
     end
   end
+  
+  def test_website
+    assert @tester.website.match(/^((http|https?:\/\/)?((?:[-a-z0-9]+\.)+[a-z]{2,}))$/)
+  end
+  
+  def test_website_with_arg
+    assert @tester.website(Faker::Company.name).match(/^((http|https?:\/\/)?((?:[-a-z0-9]+\.)+[a-z]{2,}))$/)
+  end
+  
 end

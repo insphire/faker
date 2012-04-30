@@ -26,7 +26,7 @@ module Faker
       end
       
       def domain_word(name = nil)
-        name = Company.name if name.blank?
+        name = Company.name if name.nil?
         name.split(' ').first.gsub(/\W/, '').downcase
       end
       

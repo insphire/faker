@@ -20,8 +20,10 @@ module Faker
   
   class Base
     class << self
+      
+      # Substitutes '$' for 1-9 and '#' for 0-9
       def numerify(number_string)
-        number_string.gsub(/#/) { rand(10).to_s }
+        number_string.gsub(/\$/) { (rand(9) + 1).to_s }.gsub(/#/) { rand(10).to_s }
       end
   
       def letterify(letter_string)

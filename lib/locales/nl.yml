@@ -34,7 +34,7 @@ nl:
       street_suffix: ["straat", "laan", "weg", "plantsoen", "park"]
       secondary_address: ["1 hoog", "2 hoog", "3 hoog", "I", "II", "III", "a", "b", "c"]
       # Though these are US-specific, they are here (in the default locale) for backwards compatibility
-      postcode: ["#### ??"]
+      postcode: ["$### ??"]
       state: ["Noord-Holland", "Zuid-Holland", "Utrecht", "Zeeland", "Overijssel", "Gelderland", "Drenthe", "Friesland", "Groningen", "Noord-Braband", "Limburg"]
     company:
       suffix: [BV, V.O.F., Group, en Zonen]
@@ -73,6 +73,6 @@ nl:
           - :middle_name
           - :last_name
     phone_number:
-      formats: ["(####) ######", "##########", "06########", "06 #### ####"]
+      formats: ["(#$##) $#####", "#$########", "06########", "06 #### ####"]
     cell_phone:
-      formats: ["(####) ######", "##########", "06########", "06 #### ####"]
+      formats: ["(#$##) $#####", "#$########", "06########", "06 #### ####"]
