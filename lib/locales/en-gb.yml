@@ -1,4 +1,4 @@
-en-gb:
+en-GB:
   faker:
     address:
       city_prefix: [North, East, West, South, Great, Great, Little, Long, Thorpe, Upper, Lower]

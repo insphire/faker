@@ -12,7 +12,7 @@ Fork Details
 ------------
 This is a fork of the [faker](https://github.com/stympy/faker) gem created by stympy. 
 
-This fork has been created to update the GB locale file and provide the following additional functionality:
+This fork has been created to update the GB locale file, use regional locale naming that matches the naming used in the [rails-i18n](https://github.com/svenfuchs/rails-i18n) gem (ie. en-GB rather than en-gb) and provide the following additional functionality:
 
 (1) address related UK cities and counties:
 
