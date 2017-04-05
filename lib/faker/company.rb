@@ -49,12 +49,18 @@ module Faker
           ['<10', '11-50', '51-100', '101-500', '>500' ].rand
         ].shuffle[0, num]
       end
-      
+
+      # Get a random company logo url in PNG format.
+      def logo
+        rand_num = rand(13) + 1
+        "https://pigment.github.io/fake-logos/logos/medium/color/#{rand_num}.png"
+      end
+
       private
-        
+
         # Delegate to Name's last_name for the purposes of building company names based on locale formats
         def name_element; Name.last_name; end
     end
-    
+
   end
 end
